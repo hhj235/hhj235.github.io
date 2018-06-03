@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Stack &amp; Que | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Programming Study[1주차] 스택 &amp;amp;큐(자료구조와 알고리즘) 1. Stack 1-1. Stack이란? 데이타 입/출력이 한쪽으로만 접근 할 수 있는 자료 구조 LIFO(Last In First Out) : 나중에 들어간 데이터가 제일 먼저 나옴   1-2. 스택의 동작 스택을 조작하는 동작은 Push 와 Pop 두가지로 나누어짐① Pus">
+<meta name="keywords" content="Today I learned,Programming,Stack,Que,Stack&amp;Que">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Stack &amp; Que">
+<meta property="og:url" content="http://yoursite.com/2018/06/03/Stack-Que/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Programming Study[1주차] 스택 &amp;amp;큐(자료구조와 알고리즘) 1. Stack 1-1. Stack이란? 데이타 입/출력이 한쪽으로만 접근 할 수 있는 자료 구조 LIFO(Last In First Out) : 나중에 들어간 데이터가 제일 먼저 나옴   1-2. 스택의 동작 스택을 조작하는 동작은 Push 와 Pop 두가지로 나누어짐① Pus">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://cfs2.tistory.com/upload_control/download.blog?fhandle=YmxvZzEyNDIxQGZzMi50aXN0b3J5LmNvbTovYXR0YWNoLzAvMTYucG5n">
+<meta property="og:image" content="http://cfs3.tistory.com/upload_control/download.blog?fhandle=YmxvZzEyNDIxQGZzMy50aXN0b3J5LmNvbTovYXR0YWNoLzAvOS5wbmc%3D">
+<meta property="og:image" content="http://cfs2.tistory.com/upload_control/download.blog?fhandle=YmxvZzEyNDIxQGZzMi50aXN0b3J5LmNvbTovYXR0YWNoLzAvMTcucG5n">
+<meta property="og:updated_time" content="2018-06-03T07:11:14.065Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Stack &amp; Que">
+<meta name="twitter:description" content="Programming Study[1주차] 스택 &amp;amp;큐(자료구조와 알고리즘) 1. Stack 1-1. Stack이란? 데이타 입/출력이 한쪽으로만 접근 할 수 있는 자료 구조 LIFO(Last In First Out) : 나중에 들어간 데이터가 제일 먼저 나옴   1-2. 스택의 동작 스택을 조작하는 동작은 Push 와 Pop 두가지로 나누어짐① Pus">
+<meta name="twitter:image" content="http://cfs2.tistory.com/upload_control/download.blog?fhandle=YmxvZzEyNDIxQGZzMi50aXN0b3J5LmNvbTovYXR0YWNoLzAvMTYucG5n">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/css/styles.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100434421-2', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-menu-navbar">
+      <ul class="nav navbar-nav">
+        
+          <li><a class=""
+                 href="/index.html">Home</a></li>
+        
+          <li><a class=""
+                 href="/archives/">Archives</a></li>
+        
+      </ul>
+
+      <!--
+      <ul class="nav navbar-nav navbar-right">
+        
+          <li><a href="/atom.xml" title="RSS Feed"><i class="fa fa-rss"></i></a></li>
+        
+      </ul>
+      -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+  <div class="container">
+    <div class="blog-header">
+  <h1 class="blog-title">Hexo</h1>
+  
+</div>
+
+    <div class="row">
+        <div class="col-sm-8 blog-main">
+          <article id="post-Stack-Que" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 class="article-title" itemprop="name">
+      Stack &amp; Que
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2018/06/03/Stack-Que/" class="article-date"><time datetime="2018-06-03T07:10:33.000Z" itemprop="datePublished">2018-06-03</time></a>
+</div>
+
+    
+    
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Programming-Study"><a href="#Programming-Study" class="headerlink" title="Programming Study"></a>Programming Study</h1><h2 id="1주차-스택-amp-큐"><a href="#1주차-스택-amp-큐" class="headerlink" title="[1주차] 스택 &amp;큐"></a><strong>[1주차] 스택 &amp;큐</strong></h2><h6 id="자료구조와-알고리즘"><a href="#자료구조와-알고리즘" class="headerlink" title="(자료구조와 알고리즘)"></a>(자료구조와 알고리즘)</h6><hr>
+<h1 id="1-Stack"><a href="#1-Stack" class="headerlink" title="1. Stack"></a>1. Stack</h1><hr>
+<h1 id="1-1-Stack이란"><a href="#1-1-Stack이란" class="headerlink" title="1-1. Stack이란?"></a>1-1. Stack이란?</h1><ul>
+<li>데이타 입/출력이 한쪽으로만 접근 할 수 있는 자료 구조<br><img src="http://cfs2.tistory.com/upload_control/download.blog?fhandle=YmxvZzEyNDIxQGZzMi50aXN0b3J5LmNvbTovYXR0YWNoLzAvMTYucG5n" alt=""></li>
+<li>LIFO(Last In First Out) : 나중에 들어간 데이터가 제일 먼저 나옴</li>
+</ul>
+<hr>
+<h1 id="1-2-스택의-동작"><a href="#1-2-스택의-동작" class="headerlink" title="1-2. 스택의 동작"></a>1-2. 스택의 동작</h1><ul>
+<li>스택을 조작하는 동작은 Push 와 Pop 두가지로 나누어짐<br>① Push : 데이터를 넣는 동작<br>② Pop : 데이터를 빼오는 동작<br><img src="http://cfs3.tistory.com/upload_control/download.blog?fhandle=YmxvZzEyNDIxQGZzMy50aXN0b3J5LmNvbTovYXR0YWNoLzAvOS5wbmc%3D" alt=""></li>
+</ul>
+<hr>
+<h1 id="1-3-Python에서의-Stack-구현"><a href="#1-3-Python에서의-Stack-구현" class="headerlink" title="1-3. Python에서의 Stack 구현"></a>1-3. Python에서의 Stack 구현</h1><ul>
+<li>list를 통해 Push &amp; Pop을 구현</li>
+<li><p>PUSH</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list.append()</span><br></pre></td></tr></table></figure>
+<p>-&gt; <code>append()</code> Method를 사용하여 리스트 맨 뒤에 Data 추가</p>
+</li>
+<li><p>POP</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list.pop()</span><br></pre></td></tr></table></figure>
+<p>-&gt; <code>pop()</code> Method를 사용하여 리스트 맨 뒤에 Data를 삭제</p>
+</li>
+</ul>
+<hr>
+<h1 id="2-Que"><a href="#2-Que" class="headerlink" title="2. Que"></a>2. Que</h1><hr>
+<h1 id="2-1-Que란"><a href="#2-1-Que란" class="headerlink" title="2-1. Que란?"></a>2-1. Que란?</h1><ul>
+<li>데이타 입/출력이 양쪽으로 접근 가능한 구조</li>
+<li>FIFO(First In First Out)<br>: 먼저 들어간 데이터가 먼저 나오는 구조 <em>(선입선출)</em></li>
+<li>Que를 조작하는 동작은 Put과 Get 두가지로 나누어짐<br>① Put : 데이터를 넣는 동작<br>② Get : 데이터를 빼오는 동작<br><img src="http://cfs2.tistory.com/upload_control/download.blog?fhandle=YmxvZzEyNDIxQGZzMi50aXN0b3J5LmNvbTovYXR0YWNoLzAvMTcucG5n" alt="">  </li>
+</ul>
+<hr>
+<h1 id="1-2-Python에서의-Que-구현"><a href="#1-2-Python에서의-Que-구현" class="headerlink" title="1-2. Python에서의 Que 구현"></a>1-2. Python에서의 Que 구현</h1><ul>
+<li>list를 통해 Push &amp; Pop을 구현 <strong>(Stack과 유사!)</strong></li>
+<li><p>PUT</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list.append()</span><br></pre></td></tr></table></figure>
+<p>-&gt; <code>append()</code> Method를 사용하여 리스트 맨 뒤에 Data 추가</p>
+</li>
+<li><p>GET</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list.pop(0)</span><br></pre></td></tr></table></figure>
+<p>-&gt; <code>pop(0)</code> Method를 사용하여 리스트 맨 앞에 Data를 삭제</p>
+<blockquote>
+<h4 id="list-pop-의-Docstring"><a href="#list-pop-의-Docstring" class="headerlink" title="list.pop()의 Docstring"></a><code>list.pop()의 Docstring</code></h4><h6 id="L-pop-index-gt-item-–-remove-and-return-item-at-index-default-last"><a href="#L-pop-index-gt-item-–-remove-and-return-item-at-index-default-last" class="headerlink" title="L.pop([index]) -&gt; item – remove and return item at index (default last)"></a>L.pop([index]) -&gt; item – remove and return item at index <strong><em>(default last)</em></strong></h6><h6 id="Raises-IndexError-if-list-is-empty-or-index-is-out-of-range"><a href="#Raises-IndexError-if-list-is-empty-or-index-is-out-of-range" class="headerlink" title="Raises IndexError if list is empty or index is out of range."></a>Raises IndexError if list is empty or index is out of range.</h6></blockquote>
+</li>
+</ul>
+<hr>
+<p>참고<br><a href="http://onestep.tistory.com/39" target="_blank" rel="noopener">OneStep 님의 Tistory</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/06/03/Stack-Que/" data-id="cjhyhmut10003f87kxjv9akop" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Programming/">Programming</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Que/">Que</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Stack/">Stack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Stack-Que/">Stack&Que</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Today-I-learned/">Today I learned</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+    
+<ul id="article-nav" class="nav nav-pills nav-justified">
+  
+  <li role="presentation">
+    <a href="/2018/06/03/markdown-syntax/" id="article-nav-older" class="article-nav-link-wrap">
+      <i class="fa fa-chevron-left pull-left"></i>
+      <span class="article-nav-link-title">Mark-Down Syntax</span>
+    </a>
+  </li>
+  
+  
+</ul>
+
+
+  
+</article>
+
+
+
+
+        </div>
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+  <div class="sidebar-module sidebar-module-inset">
+  <h4>About</h4>
+  <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+</div>
+
+
+  
+
+
+  
+  <div class="sidebar-module">
+    <h4>Tags</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Hexo/">Hexo</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Mark-Down/">Mark Down</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Programming/">Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Que/">Que</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Stack/">Stack</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Stack-Que/">Stack&Que</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Today-I-learned/">Today I learned</a><span class="sidebar-module-list-count">3</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>Tag Cloud</h4>
+    <p class="tagcloud">
+      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Mark-Down/" style="font-size: 10px;">Mark Down</a> <a href="/tags/Programming/" style="font-size: 10px;">Programming</a> <a href="/tags/Que/" style="font-size: 10px;">Que</a> <a href="/tags/Stack/" style="font-size: 10px;">Stack</a> <a href="/tags/Stack-Que/" style="font-size: 10px;">Stack&Que</a> <a href="/tags/Today-I-learned/" style="font-size: 20px;">Today I learned</a>
+    </p>
+  </div>
+
+
+  
+  <div class="sidebar-module">
+    <h4>Archives</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2018/06/">June 2018</a><span class="sidebar-module-list-count">3</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>Recents</h4>
+    <ul class="sidebar-module-list">
+      
+        <li>
+          <a href="/2018/06/03/Stack-Que/">Stack &amp; Que</a>
+        </li>
+      
+        <li>
+          <a href="/2018/06/03/markdown-syntax/">Mark-Down Syntax</a>
+        </li>
+      
+        <li>
+          <a href="/2018/06/03/make-a-blog-with-hexo/">Hexo로 블로그 만들기</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+
+        </div>
+    </div>
+  </div>
+  <footer class="blog-footer">
+  <div class="container">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" integrity="sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>
