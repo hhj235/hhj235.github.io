@@ -464,12 +464,12 @@ var themeMenus = {};
 </blockquote>
 <h2 id="4-포스트-작성-amp-배포"><a href="#4-포스트-작성-amp-배포" class="headerlink" title="4. 포스트 작성 &amp; 배포"></a>4. 포스트 작성 &amp; 배포</h2><ul>
 <li><strong><em>지금까지의 작업을 통해 일단 블로그 만들기의 절반은 성공했습니다!</em></strong></li>
-<li>다음은 글작성 -&gt; 배포 단계만 남아있습니다.<h3 id="①-포스트-작성하기"><a href="#①-포스트-작성하기" class="headerlink" title="① 포스트 작성하기"></a>① 포스트 작성하기</h3><ul>
+<li>다음은 글작성 -&gt; 배포 단계만 남아있습니다.<h4 id="①-포스트-작성하기"><a href="#①-포스트-작성하기" class="headerlink" title="① 포스트 작성하기"></a>① 포스트 작성하기</h4><ul>
 <li>앞에서 생성된 블로그 폴더에서 <code>hexo new post &#39;포스트명&#39;</code>을 입력합니다.<br>(<strong>hexo의 거의 모든 명령은 blog 폴더에서 진행된다고 생각하시면 됩니다.</strong>)</li>
 <li>그러면 <code>\blog\source\_posts</code> 폴더 안에 방금 입력하신 포스트명의 md확장자 파일이 생성됩니다.<br>-&gt; <code>****.md</code> 파일은 마크다운 문서로, 마크다운 문법은 <a href="https://hhj235.github.io/2018/06/03/markdown-syntax/" target="_blank" rel="noopener">이곳</a>에서 확인 가능합니다.</li>
-<li>이 파일을 Atom 등의 프로그램을 통해 편집하시면 됩니다.  <h3 id="②-배포할-주소-설정하기"><a href="#②-배포할-주소-설정하기" class="headerlink" title="② 배포할 주소 설정하기"></a>② 배포할 주소 설정하기</h3><ul>
+<li>이 파일을 Atom 등의 프로그램을 통해 편집하시면 됩니다.  <h4 id="②-배포할-주소-설정하기"><a href="#②-배포할-주소-설정하기" class="headerlink" title="② 배포할 주소 설정하기"></a>② 배포할 주소 설정하기</h4><ul>
 <li>우선 작성한 포스트가 배포되어질 주소를 적어야 합니다.(Github 에서의 commit과 비슷한 개념이라고 생각하시면 됩니다.)</li>
-<li><code>blog</code> 폴더 안에 있는 <code>_config.yml</code>파일을 다음과 같은 형식으로 편집하시면 됩니다.<br><em>(repo 안에 본인의 repo 주소를 적으면 됩니다.)</em><br><img src="/images/make-a-blog-with-hexo/config.png" alt=""><h3 id="③-배포할-주소-설정하기"><a href="#③-배포할-주소-설정하기" class="headerlink" title="③ 배포할 주소 설정하기"></a>③ 배포할 주소 설정하기</h3></li>
+<li><code>blog</code> 폴더 안에 있는 <code>_config.yml</code>파일을 다음과 같은 형식으로 편집하시면 됩니다.<br><em>(repo 안에 본인의 repo 주소를 적으면 됩니다.)</em><br><img src="/images/make-a-blog-with-hexo/config.png" alt=""><h4 id="③-배포할-주소-설정하기"><a href="#③-배포할-주소-설정하기" class="headerlink" title="③ 배포할 주소 설정하기"></a>③ 배포할 주소 설정하기</h4></li>
 <li>여기까지 입력하셨다면 blog 폴더 안에서 세가지 명령어를 순서대로 입력하시면 됩니다.</li>
 <li><code>hexo clean</code>,<code>hexo generate</code>,<code>hexo deploy</code><br>(여기서 <code>hexo depoy -g</code>로 두가지 명령을 한꺼번에 입력 가능합니다.)</li>
 <li>주의할 점은 Deploy 하더라도 변경점이 바로 반영되지는 않습니다.(<strong>딜레이가 있습니다.</strong>)</li>
