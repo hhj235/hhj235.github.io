@@ -2,11 +2,27 @@
 <html>
 <head>
   <meta charset="utf-8">
+
+  <!-- PACE Progress Bar START -->
   
-  <title>Mark-Down Syntax | HanJin의 작업실</title>
+    <script src="/js/pace.min.js"></script>
+    <link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
+  
+  
+
+  <!-- PACE Progress Bar START -->
+
+  
+  <title>mark-down syntax | HanJin의 작업실</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="Today I learnedMark Down" />
+  
+  
+  
+  
   <meta name="description" content="1.마크 다운이란?Markdwn은 텍스트 기반의 마크업 언어로 매우 간단하게 사용 가능하며, HTML로 변환 가능하다. 마크 다운은 GitHub에서 사용되면서 최근 각광받기 시작했다. 2.마크다운 문법2.1. 헤더Headers 큰제목: 문서 제목  12This is an H1============= This is an H1 =============  작은제">
-<meta name="keywords" content="Mark Down,Today I learned">
+<meta name="keywords" content="Today I learned,Mark Down">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mark-Down Syntax">
 <meta property="og:url" content="http://yoursite.com/2018/06/03/markdown-syntax/index.html">
@@ -22,104 +38,160 @@
   
     <link rel="alternate" href="/atom.xml" title="HanJin의 작업실" type="application/atom+xml">
   
-  
+  <link rel="icon" href="/css/images/favicon.ico">
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="/js/jquery-3.1.1.min.js"></script>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
   
-<!-- Google Analytics -->
-<script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-100434421-2', 'auto');
-ga('send', 'pageview');
-
-</script>
-<!-- End Google Analytics -->
-
-
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/my.css">
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "",
+          enable_page_level_ads: true
+      });
+  </script>
 </head>
 
-<body>
-  <nav class="navbar navbar-inverse">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-    </div>
+<script>
+var themeMenus = {};
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="main-menu-navbar">
-      <ul class="nav navbar-nav">
-        
-          <li><a class=""
-                 href="/index.html">Home</a></li>
-        
-          <li><a class=""
-                 href="/archives/">Archives</a></li>
-        
-      </ul>
+  themeMenus["/"] = "Home"; 
 
-      <!--
-      <ul class="nav navbar-nav navbar-right">
+  themeMenus["/archives"] = "Archives"; 
+
+  themeMenus["/categories"] = "Categories"; 
+
+  themeMenus["/tags"] = "Tags"; 
+
+  themeMenus["/about"] = "About"; 
+
+</script>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="HanJin의 작업실" rel="home"> HanJin의 작업실 </a>
+            
+          </h1>
+
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="originBgDiv" style="background: #fff; width: 100%;">
+
+      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
+        <img id="originBg" width="100%" alt="" src="">
+      </div>
+
+  </div>
+
+  <script>
+  function setAboutIMG(){
+      var imgUrls = "css/images/pose.jpg,https://source.unsplash.com/collection/954550/1920x1080".split(",");
+      var random = Math.floor((Math.random() * imgUrls.length ));
+      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+        document.getElementById("originBg").src=imgUrls[random];
+      } else {
+        document.getElementById("originBg").src='/' + imgUrls[random];
+      }
+  }
+  bgDiv=document.getElementById("originBgDiv");
+  if(location.pathname.match('about')){
+    setAboutIMG();
+    bgDiv.style.display='block';
+  }else{
+    bgDiv.style.display='none';
+  }
+  </script>
+
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
         
-          <li><a href="/atom.xml" title="RSS Feed"><i class="fa fa-rss"></i></a></li>
-        
-      </ul>
-      -->
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-  <div class="container">
-    <div class="blog-header">
-  <h1 class="blog-title">HanJin의 작업실</h1>
-  
-    <p class="lead blog-description">all about Data Science!</p>
-  
-</div>
-
-    <div class="row">
-        <div class="col-sm-8 blog-main">
-          <article id="post-markdown-syntax" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
+          <section id="main" style="float:none;"><article id="post-markdown-syntax" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
+    
+      <header class="article-header">
+        
   
-    <h1 class="article-title" itemprop="name">
+    <h1 class="thumb" class="article-title" itemprop="name">
       Mark-Down Syntax
     </h1>
   
 
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2018/06/03/markdown-syntax/" class="article-date"><time datetime="2018-06-03T07:06:19.000Z" itemprop="datePublished">2018-06-03</time></a>
-</div>
-
+      </header>
     
-    
+    <div class="article-meta">
+      
+	Posted on <a href="/2018/06/03/markdown-syntax/" class="article-date">
+	  <time datetime="2018-06-03T07:06:19.000Z" itemprop="datePublished">6월 3, 2018</time>
+	</a>
 
-  </div>
-  <div class="article-inner">
+      
+	<span id="busuanzi_container_page_pv">
+	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
 
+    </div>
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="1-마크-다운이란"><a href="#1-마크-다운이란" class="headerlink" title="1.마크 다운이란?"></a>1.마크 다운이란?</h1><p><a href="http://kirkstrobeck.github.io/whatismarkdown.com/" target="_blank" rel="noopener">Markdwn</a>은 텍스트 기반의 마크업 언어로 매우 간단하게 사용 가능하며, HTML로 변환 가능하다. 마크 다운은 GitHub에서 사용되면서 최근 각광받기 시작했다.</p>
@@ -229,132 +301,200 @@ ga('send', 'pageview');
 
       
     </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/03/markdown-syntax/" data-id="cjhzwht3k0000as7k1nmwzu36" class="article-share-link">
-        <i class="fa fa-share"></i> Share
-      </a>
+    <footer class="entry-meta entry-footer">
       
       
+  <span class="ico-tags"></span>
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mark-Down/">Mark Down</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Today-I-learned/">Today I learned</a></li></ul>
 
+      
+            
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
 
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+      
     </footer>
   </div>
   
     
-<ul id="article-nav" class="nav nav-pills nav-justified">
+<nav id="article-nav">
   
-  <li role="presentation">
-    <a href="/2018/06/03/make-a-blog-with-hexo/" id="article-nav-older" class="article-nav-link-wrap">
-      <i class="fa fa-chevron-left pull-left"></i>
-      <span class="article-nav-link-title">Hexo로 블로그 만들기</span>
-    </a>
-  </li>
-  
-  
-  <li role="presentation">
     <a href="/2018/06/03/Stack-Que/" id="article-nav-newer" class="article-nav-link-wrap">
-      <span class="article-nav-link-title">Stack &amp; Que</span>
-      <i class="fa fa-chevron-right pull-right"></i>
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Stack &amp; Que
+        
+      </div>
     </a>
-  </li>
   
-</ul>
-
+  
+    <a href="/2018/06/03/make-a-blog-with-hexo/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hexo로 블로그 만들기</div>
+    </a>
+  
+</nav>
 
   
 </article>
 
+<!-- Table of Contents -->
 
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-마크-다운이란"><span class="nav-number">1.</span> <span class="nav-text">1.마크 다운이란?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-마크다운-문법"><span class="nav-number">2.</span> <span class="nav-text">2.마크다운 문법</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-헤더Headers"><span class="nav-number">2.1.</span> <span class="nav-text">2.1. 헤더Headers</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#This-is-a-H1"><span class="nav-number">3.</span> <span class="nav-text">This is a H1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#This-is-a-H2"><span class="nav-number">3.1.</span> <span class="nav-text">This is a H2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#This-is-a-H3"><span class="nav-number">3.1.1.</span> <span class="nav-text">This is a H3</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#This-is-a-H4"><span class="nav-number">3.1.1.1.</span> <span class="nav-text">This is a H4</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#This-is-a-H5"><span class="nav-number">3.1.1.1.1.</span> <span class="nav-text">This is a H5</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#This-is-a-H6"><span class="nav-number">3.1.1.1.1.1.</span> <span class="nav-text">This is a H6</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-인용구"><span class="nav-number">3.2.</span> <span class="nav-text">2.2. 인용구</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-리스트"><span class="nav-number">3.3.</span> <span class="nav-text">2.2. 리스트</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-강조구문"><span class="nav-number">3.4.</span> <span class="nav-text">2.3. 강조구문</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-링크와-이미지"><span class="nav-number">3.5.</span> <span class="nav-text">2.4. 링크와 이미지</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-5-강제-줄바꿈"><span class="nav-number">3.6.</span> <span class="nav-text">2.5. 강제 줄바꿈</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#마크다운-에디터에서-엔터키를-이용하여-줄-바꿈을-하더라도-실제-보는-화면에서는-줄-바꿈이-되지-않음-강제로-줄-바꿈을-하고-싶으면-줄-끝에-공백-space-을-두-개-추가"><span class="nav-number">3.6.0.1.</span> <span class="nav-text">마크다운 에디터에서 엔터키를 이용하여 줄 바꿈을 하더라도 실제 보는 화면에서는 줄 바꿈이 되지 않음. 강제로 줄 바꿈을 하고 싶으면 줄 끝에 공백(space)을 두 개 추가.</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-6-코드블록"><span class="nav-number">3.7.</span> <span class="nav-text">2.6. 코드블록</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#코드블록은-프로그래밍-코드를-삽입할-경우-사용-삽입된-코드는-보기-좋게-Syntax-Highlighting-표시됨"><span class="nav-number">3.7.0.1.</span> <span class="nav-text">코드블록은 프로그래밍 코드를 삽입할 경우 사용. 삽입된 코드는 보기 좋게(Syntax Highlighting) 표시됨</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#삽입하는-코드-앞에-스페이스-4개를-삽입하면-됨-모든줄에-스페이스-4개-삽입해야-함-스페이스-블록인-경우-코드의-구문을-체크하여-자동으로-신택스-하이라이팅을-함-자동으로-해당-언어를-감지함"><span class="nav-number">3.7.0.2.</span> <span class="nav-text">삽입하는 코드 앞에 스페이스 4개를 삽입하면 됨 (모든줄에 스페이스 4개 삽입해야 함) 스페이스 블록인 경우 코드의 구문을 체크하여 자동으로 신택스 하이라이팅을 함. (자동으로 해당 언어를 감지함.)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#주의사항-은-작은-따옴표가-아닌-키보드의-표시임"><span class="nav-number">3.7.0.3.</span> <span class="nav-text">주의사항 : 은 작은 따옴표가 아닌(키보드의 ~표시임)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-7-마크다운-extension"><span class="nav-number">3.8.</span> <span class="nav-text">2.7 마크다운 extension</span></a></li></ol></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
 
-
-        </div>
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2018 HanJin의 작업실 All Rights Reserved.
           
-  <div class="sidebar-module sidebar-module-inset">
-  <h4>About</h4>
-  <p>데이터 사이언티스트가 되기 위해 공부중입니다 <br> 매일 배운것과 관심 갖게된 것들을 기록합니다.</p>
-
-</div>
-
-
-  
-
-
-  
-  <div class="sidebar-module">
-    <h4>Tags</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Hexo/">Hexo</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Mark-Down/">Mark Down</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Programming/">Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Que/">Que</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Stack/">Stack</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Stack-Que/">Stack&Que</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Today-I-learned/">Today I learned</a><span class="sidebar-module-list-count">3</span></li></ul>
-  </div>
-
-
-
-  
-  <div class="sidebar-module">
-    <h4>Tag Cloud</h4>
-    <p class="tagcloud">
-      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Mark-Down/" style="font-size: 10px;">Mark Down</a> <a href="/tags/Programming/" style="font-size: 10px;">Programming</a> <a href="/tags/Que/" style="font-size: 10px;">Que</a> <a href="/tags/Stack/" style="font-size: 10px;">Stack</a> <a href="/tags/Stack-Que/" style="font-size: 10px;">Stack&Que</a> <a href="/tags/Today-I-learned/" style="font-size: 20px;">Today I learned</a>
-    </p>
-  </div>
-
-
-  
-  <div class="sidebar-module">
-    <h4>Archives</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2018/06/">6월 2018</a><span class="sidebar-module-list-count">3</span></li></ul>
-  </div>
-
-
-
-  
-  <div class="sidebar-module">
-    <h4>Recents</h4>
-    <ul class="sidebar-module-list">
-      
-        <li>
-          <a href="/2018/06/03/Stack-Que/">Stack &amp; Que</a>
-        </li>
-      
-        <li>
-          <a href="/2018/06/03/markdown-syntax/">Mark-Down Syntax</a>
-        </li>
-      
-        <li>
-          <a href="/2018/06/03/make-a-blog-with-hexo/">Hexo로 블로그 만들기</a>
-        </li>
-      
-    </ul>
-  </div>
-
-
-
-        </div>
-    </div>
-  </div>
-  <footer class="blog-footer">
-  <div class="container">
-    <div id="footer-info" class="inner">
-      &copy; 2018 Hanjin Hwang<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
   </div>
 </footer>
 
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+
+<!-- Custome JS -->
+<script src="/js/my.js"></script>
+    </div>
+    <!-- <nav id="mobile-nav">
   
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" integrity="sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx" crossorigin="anonymous"></script>
+<!-- mathjax config similar to math.stackexchange -->
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/scripts.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100434421-2', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
 
 
 
-<script src="/js/script.js"></script>
 
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
 </body>
 </html>

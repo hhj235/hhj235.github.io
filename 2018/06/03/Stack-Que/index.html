@@ -2,11 +2,27 @@
 <html>
 <head>
   <meta charset="utf-8">
+
+  <!-- PACE Progress Bar START -->
   
-  <title>Stack &amp; Que | HanJin의 작업실</title>
+    <script src="/js/pace.min.js"></script>
+    <link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
+  
+  
+
+  <!-- PACE Progress Bar START -->
+
+  
+  <title>stack &amp; que | HanJin의 작업실</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="ProgrammingToday I learnedStackQueStack&Que" />
+  
+  
+  
+  
   <meta name="description" content="Programming Study[1주차] 스택 &amp;amp;큐(자료구조와 알고리즘) 1. Stack 1-1. Stack이란? 데이타 입/출력이 한쪽으로만 접근 할 수 있는 자료 구조 LIFO(Last In First Out) : 나중에 들어간 데이터가 제일 먼저 나옴   1-2. 스택의 동작 스택을 조작하는 동작은 Push 와 Pop 두가지로 나누어짐① Pus">
-<meta name="keywords" content="Today I learned,Programming,Stack,Que,Stack&amp;Que">
+<meta name="keywords" content="Programming,Today I learned,Stack,Que,Stack&amp;Que">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Stack &amp; Que">
 <meta property="og:url" content="http://yoursite.com/2018/06/03/Stack-Que/index.html">
@@ -24,104 +40,160 @@
   
     <link rel="alternate" href="/atom.xml" title="HanJin의 작업실" type="application/atom+xml">
   
-  
+  <link rel="icon" href="/css/images/favicon.ico">
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="/js/jquery-3.1.1.min.js"></script>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
   
-<!-- Google Analytics -->
-<script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-100434421-2', 'auto');
-ga('send', 'pageview');
-
-</script>
-<!-- End Google Analytics -->
-
-
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/my.css">
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "",
+          enable_page_level_ads: true
+      });
+  </script>
 </head>
 
-<body>
-  <nav class="navbar navbar-inverse">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-    </div>
+<script>
+var themeMenus = {};
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="main-menu-navbar">
-      <ul class="nav navbar-nav">
-        
-          <li><a class=""
-                 href="/index.html">Home</a></li>
-        
-          <li><a class=""
-                 href="/archives/">Archives</a></li>
-        
-      </ul>
+  themeMenus["/"] = "Home"; 
 
-      <!--
-      <ul class="nav navbar-nav navbar-right">
+  themeMenus["/archives"] = "Archives"; 
+
+  themeMenus["/categories"] = "Categories"; 
+
+  themeMenus["/tags"] = "Tags"; 
+
+  themeMenus["/about"] = "About"; 
+
+</script>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="HanJin의 작업실" rel="home"> HanJin의 작업실 </a>
+            
+          </h1>
+
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="originBgDiv" style="background: #fff; width: 100%;">
+
+      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
+        <img id="originBg" width="100%" alt="" src="">
+      </div>
+
+  </div>
+
+  <script>
+  function setAboutIMG(){
+      var imgUrls = "css/images/pose.jpg,https://source.unsplash.com/collection/954550/1920x1080".split(",");
+      var random = Math.floor((Math.random() * imgUrls.length ));
+      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+        document.getElementById("originBg").src=imgUrls[random];
+      } else {
+        document.getElementById("originBg").src='/' + imgUrls[random];
+      }
+  }
+  bgDiv=document.getElementById("originBgDiv");
+  if(location.pathname.match('about')){
+    setAboutIMG();
+    bgDiv.style.display='block';
+  }else{
+    bgDiv.style.display='none';
+  }
+  </script>
+
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
         
-          <li><a href="/atom.xml" title="RSS Feed"><i class="fa fa-rss"></i></a></li>
-        
-      </ul>
-      -->
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-  <div class="container">
-    <div class="blog-header">
-  <h1 class="blog-title">HanJin의 작업실</h1>
-  
-    <p class="lead blog-description">all about Data Science!</p>
-  
-</div>
-
-    <div class="row">
-        <div class="col-sm-8 blog-main">
-          <article id="post-Stack-Que" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
+          <section id="main" style="float:none;"><article id="post-Stack-Que" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
+    
+      <header class="article-header">
+        
   
-    <h1 class="article-title" itemprop="name">
+    <h1 class="thumb" class="article-title" itemprop="name">
       Stack &amp; Que
     </h1>
   
 
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2018/06/03/Stack-Que/" class="article-date"><time datetime="2018-06-03T07:10:33.000Z" itemprop="datePublished">2018-06-03</time></a>
-</div>
-
+      </header>
     
-    
+    <div class="article-meta">
+      
+	Posted on <a href="/2018/06/03/Stack-Que/" class="article-date">
+	  <time datetime="2018-06-03T07:10:33.000Z" itemprop="datePublished">6월 3, 2018</time>
+	</a>
 
-  </div>
-  <div class="article-inner">
+      
+	<span id="busuanzi_container_page_pv">
+	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
 
+    </div>
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="Programming-Study"><a href="#Programming-Study" class="headerlink" title="Programming Study"></a>Programming Study</h1><h2 id="1주차-스택-amp-큐"><a href="#1주차-스택-amp-큐" class="headerlink" title="[1주차] 스택 &amp;큐"></a><strong>[1주차] 스택 &amp;큐</strong></h2><h6 id="자료구조와-알고리즘"><a href="#자료구조와-알고리즘" class="headerlink" title="(자료구조와 알고리즘)"></a>(자료구조와 알고리즘)</h6><hr>
@@ -172,125 +244,191 @@ ga('send', 'pageview');
 
       
     </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/03/Stack-Que/" data-id="cjhzwht44000aas7khln1sh65" class="article-share-link">
-        <i class="fa fa-share"></i> Share
-      </a>
+    <footer class="entry-meta entry-footer">
       
       
+  <span class="ico-tags"></span>
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Programming/">Programming</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Que/">Que</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Stack/">Stack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Stack-Que/">Stack&Que</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Today-I-learned/">Today I learned</a></li></ul>
 
+      
+            
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
 
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+      
     </footer>
   </div>
   
     
-<ul id="article-nav" class="nav nav-pills nav-justified">
+<nav id="article-nav">
   
-  <li role="presentation">
+  
     <a href="/2018/06/03/markdown-syntax/" id="article-nav-older" class="article-nav-link-wrap">
-      <i class="fa fa-chevron-left pull-left"></i>
-      <span class="article-nav-link-title">Mark-Down Syntax</span>
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Mark-Down Syntax</div>
     </a>
-  </li>
   
-  
-</ul>
-
+</nav>
 
   
 </article>
 
+<!-- Table of Contents -->
 
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Programming-Study"><span class="nav-number">1.</span> <span class="nav-text">Programming Study</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1주차-스택-amp-큐"><span class="nav-number">1.1.</span> <span class="nav-text">[1주차] 스택 &amp;큐</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#자료구조와-알고리즘"><span class="nav-number">1.1.0.0.0.1.</span> <span class="nav-text">(자료구조와 알고리즘)</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-Stack"><span class="nav-number">2.</span> <span class="nav-text">1. Stack</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-1-Stack이란"><span class="nav-number">3.</span> <span class="nav-text">1-1. Stack이란?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-2-스택의-동작"><span class="nav-number">4.</span> <span class="nav-text">1-2. 스택의 동작</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-3-Python에서의-Stack-구현"><span class="nav-number">5.</span> <span class="nav-text">1-3. Python에서의 Stack 구현</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-Que"><span class="nav-number">6.</span> <span class="nav-text">2. Que</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-1-Que란"><span class="nav-number">7.</span> <span class="nav-text">2-1. Que란?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-2-Python에서의-Que-구현"><span class="nav-number">8.</span> <span class="nav-text">1-2. Python에서의 Que 구현</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#list-pop-의-Docstring"><span class="nav-number">8.0.0.1.</span> <span class="nav-text">list.pop()의 Docstring</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#L-pop-index-gt-item-–-remove-and-return-item-at-index-default-last"><span class="nav-number">8.0.0.1.0.1.</span> <span class="nav-text">L.pop([index]) -&gt; item – remove and return item at index (default last)</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#Raises-IndexError-if-list-is-empty-or-index-is-out-of-range"><span class="nav-number">8.0.0.1.0.2.</span> <span class="nav-text">Raises IndexError if list is empty or index is out of range.</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
 
-
-        </div>
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2018 HanJin의 작업실 All Rights Reserved.
           
-  <div class="sidebar-module sidebar-module-inset">
-  <h4>About</h4>
-  <p>데이터 사이언티스트가 되기 위해 공부중입니다 <br> 매일 배운것과 관심 갖게된 것들을 기록합니다.</p>
-
-</div>
-
-
-  
-
-
-  
-  <div class="sidebar-module">
-    <h4>Tags</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Hexo/">Hexo</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Mark-Down/">Mark Down</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Programming/">Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Que/">Que</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Stack/">Stack</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Stack-Que/">Stack&Que</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Today-I-learned/">Today I learned</a><span class="sidebar-module-list-count">3</span></li></ul>
-  </div>
-
-
-
-  
-  <div class="sidebar-module">
-    <h4>Tag Cloud</h4>
-    <p class="tagcloud">
-      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Mark-Down/" style="font-size: 10px;">Mark Down</a> <a href="/tags/Programming/" style="font-size: 10px;">Programming</a> <a href="/tags/Que/" style="font-size: 10px;">Que</a> <a href="/tags/Stack/" style="font-size: 10px;">Stack</a> <a href="/tags/Stack-Que/" style="font-size: 10px;">Stack&Que</a> <a href="/tags/Today-I-learned/" style="font-size: 20px;">Today I learned</a>
-    </p>
-  </div>
-
-
-  
-  <div class="sidebar-module">
-    <h4>Archives</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2018/06/">6월 2018</a><span class="sidebar-module-list-count">3</span></li></ul>
-  </div>
-
-
-
-  
-  <div class="sidebar-module">
-    <h4>Recents</h4>
-    <ul class="sidebar-module-list">
-      
-        <li>
-          <a href="/2018/06/03/Stack-Que/">Stack &amp; Que</a>
-        </li>
-      
-        <li>
-          <a href="/2018/06/03/markdown-syntax/">Mark-Down Syntax</a>
-        </li>
-      
-        <li>
-          <a href="/2018/06/03/make-a-blog-with-hexo/">Hexo로 블로그 만들기</a>
-        </li>
-      
-    </ul>
-  </div>
-
-
-
-        </div>
-    </div>
-  </div>
-  <footer class="blog-footer">
-  <div class="container">
-    <div id="footer-info" class="inner">
-      &copy; 2018 Hanjin Hwang<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
   </div>
 </footer>
 
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+
+<!-- Custome JS -->
+<script src="/js/my.js"></script>
+    </div>
+    <!-- <nav id="mobile-nav">
   
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" integrity="sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx" crossorigin="anonymous"></script>
+<!-- mathjax config similar to math.stackexchange -->
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/scripts.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100434421-2', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
 
 
 
-<script src="/js/script.js"></script>
 
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
 </body>
 </html>
