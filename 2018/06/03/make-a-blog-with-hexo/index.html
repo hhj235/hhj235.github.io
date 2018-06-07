@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8" />
 
-  <!-- PACE Progress Bar START -->
-  
-    <script src="/js/pace.min.js"></script>
-    <link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
-  
-  
+    
 
-  <!-- PACE Progress Bar START -->
-
-  
-  <title>hexo로 블로그 만들기 | HanJin의 작업실</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
-  <meta name="keywords" content="Today I learnedHexo" />
-  
-  
-  
-  
-  <meta name="description" content="오늘부터 Hexo 블로그 시작합니다!Linux &amp;amp; Github 수업을 듣고 HEXO라는 블로그가 있다는 강사님의 소개로 블로그를 개설하게 됬습니다.앞으로 Data Scientist로 성장해 나가며, 그날그날의 배운것들과 새로 알게된것들을 정리해보고자 합니다.그럼 첫번째 포스팅으로 HEXO에 대해서 이야기해보고자 합니다. HEXO란? Github를 이">
+    
+    <title>Hexo로 블로그 만들기 | HanJin의 작업실</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="Today I learned,Hexo" />
+    
+    <meta name="description" content="오늘부터 Hexo 블로그 시작합니다!Linux &amp;amp; Github 수업을 듣고 HEXO라는 블로그가 있다는 강사님의 소개로 블로그를 개설하게 됬습니다.앞으로 Data Scientist로 성장해 나가며, 그날그날의 배운것들과 새로 알게된것들을 정리해보고자 합니다.그럼 첫번째 포스팅으로 HEXO에 대해서 이야기해보고자 합니다. HEXO란? Github를 이">
 <meta name="keywords" content="Today I learned,Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo로 블로그 만들기">
@@ -30,170 +21,171 @@
 <meta property="og:description" content="오늘부터 Hexo 블로그 시작합니다!Linux &amp;amp; Github 수업을 듣고 HEXO라는 블로그가 있다는 강사님의 소개로 블로그를 개설하게 됬습니다.앞으로 Data Scientist로 성장해 나가며, 그날그날의 배운것들과 새로 알게된것들을 정리해보고자 합니다.그럼 첫번째 포스팅으로 HEXO에 대해서 이야기해보고자 합니다. HEXO란? Github를 이">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://hhj235.github.io/images/make-a-blog-with-hexo/make_new_repo.png">
-<meta property="og:image" content="https://hhj235.github.io/images/make-a-blog-with-hexo/blog.png">
-<meta property="og:image" content="https://hhj235.github.io/images/make-a-blog-with-hexo/node.png">
-<meta property="og:image" content="https://hhj235.github.io/images/make-a-blog-with-hexo/config.png">
 <meta property="og:updated_time" content="2018-06-04T07:15:58.043Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo로 블로그 만들기">
 <meta name="twitter:description" content="오늘부터 Hexo 블로그 시작합니다!Linux &amp;amp; Github 수업을 듣고 HEXO라는 블로그가 있다는 강사님의 소개로 블로그를 개설하게 됬습니다.앞으로 Data Scientist로 성장해 나가며, 그날그날의 배운것들과 새로 알게된것들을 정리해보고자 합니다.그럼 첫번째 포스팅으로 HEXO에 대해서 이야기해보고자 합니다. HEXO란? Github를 이">
 <meta name="twitter:image" content="https://hhj235.github.io/images/make-a-blog-with-hexo/make_new_repo.png">
-  
-    <link rel="alternate" href="/atom.xml" title="HanJin의 작업실" type="application/atom+xml">
-  
-  <link rel="icon" href="/css/images/favicon.ico">
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
-  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-  <style type="text/css">
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
     
-  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
-  <link rel="stylesheet" href="/css/style.css">
 
-  <script src="/js/jquery-3.1.1.min.js"></script>
+    
+        <link rel="alternate" href="/" title="HanJin의 작업실" type="application/atom+xml" />
+    
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="/css/bootstrap.css" >
-  <link rel="stylesheet" href="/css/hiero.css" >
-  <link rel="stylesheet" href="/css/glyphs.css" >
-  
+    
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="/css/my.css">
-  <!-- Google Adsense -->
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-2107537225280411",
-          enable_page_level_ads: true
-      });
-  </script>
-</head>
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
 
-<script>
-var themeMenus = {};
+    <link rel="stylesheet" href="/css/style.css">
 
-  themeMenus["/"] = "Home"; 
+    <script src="/libs/jquery/2.2.4/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  themeMenus["/archives"] = "Archives"; 
-
-  themeMenus["/categories"] = "Categories"; 
-
-  themeMenus["/tags"] = "Tags"; 
-
-  themeMenus["/about"] = "About"; 
+ga('create', 'UA-100434421-2', 'auto');
+ga('send', 'pageview');
 
 </script>
+    
+    
 
 
-  <body data-spy="scroll" data-target="#toc" data-offset="50">
+</head>
 
-
-  <header id="allheader" class="site-header" role="banner">
-  <div class="clearfix container">
-      <div class="site-branding">
-
-          <h1 class="site-title">
-            
-              <a href="/" title="HanJin의 작업실" rel="home"> HanJin의 작업실 </a>
-            
-          </h1>
-
-          
-            
-          <nav id="main-navigation" class="main-navigation" role="navigation">
-            <a class="nav-open">Menu</a>
-            <a class="nav-close">Close</a>
-            <div class="clearfix sf-menu">
-
-              <ul id="main-nav" class="nmenu sf-js-enabled">
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
-                    
-              </ul>
-            </div>
-          </nav>
-
-
-      </div>
-  </div>
-</header>
-
-
-  <div id="originBgDiv" style="background: #fff; width: 100%;">
-
-      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
-        <img id="originBg" width="100%" alt="" src="">
-      </div>
-
-  </div>
-
-  <script>
-  function setAboutIMG(){
-      var imgUrls = "css/images/pose.jpg,https://source.unsplash.com/collection/954550/1920x1080".split(",");
-      var random = Math.floor((Math.random() * imgUrls.length ));
-      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
-        document.getElementById("originBg").src=imgUrls[random];
-      } else {
-        document.getElementById("originBg").src='/' + imgUrls[random];
-      }
-  }
-  bgDiv=document.getElementById("originBgDiv");
-  if(location.pathname.match('about')){
-    setAboutIMG();
-    bgDiv.style.display='block';
-  }else{
-    bgDiv.style.display='none';
-  }
-  </script>
-
-
-
-  <div id="container">
+<body>
     <div id="wrap">
-            
-      <div id="content" class="outer">
-        
-          <section id="main" style="float:none;"><article id="post-make-a-blog-with-hexo" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" class="article-title" itemprop="name">
-      Hexo로 블로그 만들기
-    </h1>
-  
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">all about Data Science!</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
 
-      </header>
-    
-    <div class="article-meta">
-      
-	Posted on <a href="/2018/06/03/make-a-blog-with-hexo/" class="article-date">
-	  <time datetime="2018-06-03T07:03:05.000Z" itemprop="datePublished">June 3, 2018</time>
-	</a>
-
-      
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>오늘부터 Hexo 블로그 시작합니다!<br>Linux &amp; Github 수업을 듣고 HEXO라는 블로그가 있다는 강사님의 소개로 블로그를 개설하게 됬습니다.<br>앞으로 Data Scientist로 성장해 나가며, 그날그날의 배운것들과 새로 알게된것들을 정리해보고자 합니다.<br>그럼 첫번째 포스팅으로 HEXO에 대해서 이야기해보고자 합니다.</p>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    uncategorized
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-make-a-blog-with-hexo" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Hexo로 블로그 만들기
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2018/06/03/make-a-blog-with-hexo/" class="article-date">
+            <time datetime="2018-06-03T07:03:05.000Z" itemprop="datePublished">2018-06-03</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Hexo/">Hexo</a>, <a class="tag-link" href="/tags/Today-I-learned/">Today I learned</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p>오늘부터 Hexo 블로그 시작합니다!<br>Linux &amp; Github 수업을 듣고 HEXO라는 블로그가 있다는 강사님의 소개로 블로그를 개설하게 됬습니다.<br>앞으로 Data Scientist로 성장해 나가며, 그날그날의 배운것들과 새로 알게된것들을 정리해보고자 합니다.<br>그럼 첫번째 포스팅으로 HEXO에 대해서 이야기해보고자 합니다.</p>
 <h1 id="HEXO란"><a href="#HEXO란" class="headerlink" title="HEXO란?"></a>HEXO란?</h1><ul>
 <li>Github를 이용한 정적인 블로그 프레임 워크<br><em>→ 제 블로그 처럼 github.io로 끝나는 블로그는 github를 이용한 블로그입니다.</em></li>
 <li>Node.js 기반으로 만들어짐</li>
@@ -254,165 +246,356 @@ var themeMenus = {};
 <hr>
 <p>참고<br><a href="https://appear.github.io/2017/11/02/Etc/etc-02/" target="_blank" rel="noopener">appear 님의 블로그</a></p>
 
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-      
-  <span class="ico-tags"></span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Today-I-learned/">Today I learned</a></li></ul>
-
-      
+        </div>
+        <footer class="article-footer">
             
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2018/06/03/markdown-syntax/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Mark-Down Syntax
-        
-      </div>
-    </a>
-  
-  
-</nav>
 
-  
+
+
+    <a data-url="https://hhj235.github.io/2018/06/03/make-a-blog-with-hexo/" data-id="cji3v15vr00038w7kn1f2jdvj" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
 </article>
 
-<!-- Table of Contents -->
-
-  <aside id="sidebar">
-    <div id="toc" class="toc-article">
-    <strong class="toc-title">Contents</strong>
+    <section id="comments">
     
-      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HEXO란"><span class="nav-number">1.</span> <span class="nav-text">HEXO란?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HEXO의-장점"><span class="nav-number">2.</span> <span class="nav-text">HEXO의 장점?</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#엄청나게-빠른-속도"><span class="nav-number">2.1.</span> <span class="nav-text">엄청나게 빠른 속도!</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown-지원"><span class="nav-number">2.2.</span> <span class="nav-text">Markdown 지원</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#한-번의-명령으로-Deployment-하기"><span class="nav-number">2.3.</span> <span class="nav-text">한 번의 명령으로 Deployment 하기</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#다양한-플러그인"><span class="nav-number">2.4.</span> <span class="nav-text">다양한 플러그인</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo로-블로그-만들기"><span class="nav-number">3.</span> <span class="nav-text">Hexo로 블로그 만들기!</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Github-Repository-만들기"><span class="nav-number">3.1.</span> <span class="nav-text">1. Github Repository 만들기</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Hexo-설치하기"><span class="nav-number">3.2.</span> <span class="nav-text">2. Hexo 설치하기</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Hexo-블로그-시작하기"><span class="nav-number">3.3.</span> <span class="nav-text">3. Hexo 블로그 시작하기</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-포스트-작성-amp-배포"><span class="nav-number">3.4.</span> <span class="nav-text">4. 포스트 작성 &amp; 배포</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#①-포스트-작성하기"><span class="nav-number">3.4.0.1.</span> <span class="nav-text">① 포스트 작성하기</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#②-배포할-주소-설정하기"><span class="nav-number">3.4.0.2.</span> <span class="nav-text">② 배포할 주소 설정하기</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#③-배포할-주소-설정하기"><span class="nav-number">3.4.0.3.</span> <span class="nav-text">③ 배포할 주소 설정하기</span></a></li></ol></li></ol></li></ol></li></ol>
-    
-    </div>
-  </aside>
-</section>
         
-      </div>
-      <footer id="footer" class="site-footer">
-  
-
-  <div class="clearfix container">
-      <div class="site-info">
-	      &copy; 2018 HanJin의 작업실 All Rights Reserved.
-          
-      </div>
-      <div class="site-credit">
-        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
-      </div>
-  </div>
-</footer>
-
-
-<!-- min height -->
-
-<script>
-    var contentdiv = document.getElementById("content");
-
-    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
-</script>
-
-<!-- Custome JS -->
-<script src="/js/my.js"></script>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-    <!-- <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/categories" class="mobile-nav-link">Categories</a>
-  
-    <a href="/tags" class="mobile-nav-link">Tags</a>
-  
-    <a href="/about" class="mobile-nav-link">About</a>
-  
-</nav> -->
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/hhj235" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2018/06/03/markdown-syntax/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            Mark-Down Syntax
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/03/Stack-Que/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://cfs2.tistory.com/upload_control/download.blog?fhandle=YmxvZzEyNDIxQGZzMi50aXN0b3J5LmNvbTovYXR0YWNoLzAvMTYucG5n)" alt="Stack &amp; Que" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/06/03/Stack-Que/" class="title">Stack &amp; Que</a></p>
+                            <p class="item-date"><time datetime="2018-06-03T07:10:33.000Z" itemprop="datePublished">2018-06-03</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/03/markdown-syntax/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/markdown-syntax/말랑이.jpg)" alt="Mark-Down Syntax" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/06/03/markdown-syntax/" class="title">Mark-Down Syntax</a></p>
+                            <p class="item-date"><time datetime="2018-06-03T07:06:19.000Z" itemprop="datePublished">2018-06-03</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/03/make-a-blog-with-hexo/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/make-a-blog-with-hexo/make_new_repo.png)" alt="Hexo로 블로그 만들기" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/06/03/make-a-blog-with-hexo/" class="title">Hexo로 블로그 만들기</a></p>
+                            <p class="item-date"><time datetime="2018-06-03T07:03:05.000Z" itemprop="datePublished">2018-06-03</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">3</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mark-Down/">Mark Down</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Programming/">Programming</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Que/">Que</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Stack/">Stack</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Stack-Que/">Stack&Que</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Today-I-learned/">Today I learned</a><span class="tag-list-count">3</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Mark-Down/" style="font-size: 10px;">Mark Down</a> <a href="/tags/Programming/" style="font-size: 10px;">Programming</a> <a href="/tags/Que/" style="font-size: 10px;">Que</a> <a href="/tags/Stack/" style="font-size: 10px;">Stack</a> <a href="/tags/Stack-Que/" style="font-size: 10px;">Stack&Que</a> <a href="/tags/Today-I-learned/" style="font-size: 20px;">Today I learned</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 Hanjin Hwang</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'https://hhj235.github.io/2018/06/03/make-a-blog-with-hexo/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     
 
-<!-- mathjax config similar to math.stackexchange -->
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      }
-    });
-</script>
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/scripts.js"></script>
-<script src="/js/bootstrap.js"></script>
+<!-- Custom Scripts -->
 <script src="/js/main.js"></script>
 
-
-<!-- Google Analytics -->
-<script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-100434421-2', 'auto');
-ga('send', 'pageview');
-
-</script>
-<!-- End Google Analytics -->
-
-
-
-
-
-
-  <div style="display: none;">
-    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
-  </div>
-
-
-
-
-
-
-
-
-  </div>
-
-  <a id="rocket" href="#top" class=""></a>
-  <script type="text/javascript" src="/js/totop.js" async=""></script>
+    </div>
 </body>
 </html>
