@@ -6,21 +6,24 @@
     
 
     
-    <title>crawling with xpath selector | Mr.Hwang의 작업실</title>
+    <title>Web Crawling with scrapy(1) | Mr.Hwang의 작업실</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="crawling,xpath" />
+        <meta name="keywords" content="Crawling,Scrapy,xpath" />
     
-    <meta name="keywords" content="crawling,xpath">
+    <meta name="description" content="1. Scrapy? Scrapy란 웹사이트에서 데이터 추출을 위한 오픈소스 프레임워크(이번 포스팅에서는 Xpath를 활용하여 크롤링 해보겠습니다.)  2. Install Scrapy windows : conda install -c conda-forge scrapy mac : pip3 install scrapy 3. Xpath를 활용하여 크롤링하기3.1 Xp">
+<meta name="keywords" content="Crawling,Scrapy,xpath">
 <meta property="og:type" content="article">
-<meta property="og:title" content="crawling with xpath selector">
+<meta property="og:title" content="Web Crawling with scrapy(1)">
 <meta property="og:url" content="https://hhj235.github.io/2018/06/23/crawling-with-xpath-selector/index.html">
 <meta property="og:site_name" content="Mr.Hwang의 작업실">
+<meta property="og:description" content="1. Scrapy? Scrapy란 웹사이트에서 데이터 추출을 위한 오픈소스 프레임워크(이번 포스팅에서는 Xpath를 활용하여 크롤링 해보겠습니다.)  2. Install Scrapy windows : conda install -c conda-forge scrapy mac : pip3 install scrapy 3. Xpath를 활용하여 크롤링하기3.1 Xp">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-06-23T00:57:26.029Z">
+<meta property="og:updated_time" content="2018-06-23T04:45:53.030Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="crawling with xpath selector">
+<meta name="twitter:title" content="Web Crawling with scrapy(1)">
+<meta name="twitter:description" content="1. Scrapy? Scrapy란 웹사이트에서 데이터 추출을 위한 오픈소스 프레임워크(이번 포스팅에서는 Xpath를 활용하여 크롤링 해보겠습니다.)  2. Install Scrapy windows : conda install -c conda-forge scrapy mac : pip3 install scrapy 3. Xpath를 활용하여 크롤링하기3.1 Xp">
     
 
     
@@ -85,7 +88,7 @@ ga('send', 'pageview');
                                     <a class="main-nav-list-link" href="/">홈</a>
                                 </li>
                             
-                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Algorithm/">Algorithm</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Crawling/">Crawling</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Web/">Web</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Web/Hexo/">Hexo</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Web/Mark-Down/">Mark Down</a></li></ul></li></ul>
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Algorithm/">Algorithm</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Crawling/">Crawling</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Crawling/Scrapy/">Scrapy</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Web/">Web</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Web/Hexo/">Hexo</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Web/Mark-Down/">Mark Down</a></li></ul></li></ul>
                                     
                                 <li class="main-nav-list-item" >
                                     <a class="main-nav-list-link" href="/about/index.html">About</a>
@@ -144,7 +147,7 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/Crawling/">Crawling</a>
+    <a class="page-title-link" href="/categories/Crawling/">Crawling</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Crawling/Scrapy/">Scrapy</a>
     </h1>
 </div>
                         <div class="main-body-content">
@@ -176,7 +179,7 @@ ga('send', 'pageview');
                 
     
         <h1 class="article-title" itemprop="name">
-        crawling with xpath selector
+        Web Crawling with scrapy(1)
         </h1>
     
 
@@ -194,14 +197,47 @@ ga('send', 'pageview');
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/crawling/">crawling</a>, <a class="tag-link" href="/tags/xpath/">xpath</a>
+        <a class="tag-link" href="/tags/Crawling/">Crawling</a>, <a class="tag-link" href="/tags/Scrapy/">Scrapy</a>, <a class="tag-link" href="/tags/xpath/">xpath</a>
     </div>
 
             </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-            
+            <h1 id="1-Scrapy"><a href="#1-Scrapy" class="headerlink" title="1. Scrapy?"></a>1. <a href="https://scrapy.org/" target="_blank" rel="noopener">Scrapy?</a></h1><ul>
+<li>Scrapy란 웹사이트에서 데이터 추출을 위한 오픈소스 프레임워크<br>(이번 포스팅에서는 <a href="https://ko.wikipedia.org/wiki/XPath" target="_blank" rel="noopener">Xpath</a>를 활용하여 크롤링 해보겠습니다.)</li>
+</ul>
+<h1 id="2-Install-Scrapy"><a href="#2-Install-Scrapy" class="headerlink" title="2. Install Scrapy"></a>2. <a href="https://docs.scrapy.org/en/latest/intro/install.html" target="_blank" rel="noopener">Install Scrapy</a></h1><ul>
+<li>windows : conda install -c conda-forge scrapy</li>
+<li><p>mac : pip3 install scrapy</p>
+<h1 id="3-Xpath를-활용하여-크롤링하기"><a href="#3-Xpath를-활용하여-크롤링하기" class="headerlink" title="3. Xpath를 활용하여 크롤링하기"></a>3. Xpath를 활용하여 크롤링하기</h1><h2 id="3-1-Xpath-기본-문법"><a href="#3-1-Xpath-기본-문법" class="headerlink" title="3.1 Xpath 기본 문법"></a>3.1 Xpath 기본 문법</h2><ul>
+<li><code>//</code> : 가장 상위 Element</li>
+<li><code>.</code> : 현재 Element</li>
+<li><code>*</code>: 조건에 맞는 앞부분의 하위 Element를 모두 살펴봄 ( css selector에서 한칸 띄기와 같음 )</li>
+<li><code>/</code> : 바로 아래 요소 ( css selector에서 &gt; 와 같음 )</li>
+<li>element[조건]<ul>
+<li><code>p[2]</code> : p element의 두번째 element : index가 0이 아닌 1부터 시작</li>
+<li><code>[@id=&quot;email&quot;]</code> : 아이디 값이 email인 element</li>
+<li><code>[@class=&quot;pw&quot;]</code> : 클래스 값이 pw인 element</li>
+<li><code>not(조건)</code> : 조건이 아닌 요소를 찾음</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-2-scrapy-shell을-활용한-크롤링"><a href="#3-2-scrapy-shell을-활용한-크롤링" class="headerlink" title="3.2 scrapy shell을 활용한 크롤링"></a>3.2 scrapy shell을 활용한 크롤링</h2><h3 id="3-2-1-네이버-실시간-검색어-불러오기"><a href="#3-2-1-네이버-실시간-검색어-불러오기" class="headerlink" title="3.2.1 네이버 실시간 검색어 불러오기"></a>3.2.1 네이버 실시간 검색어 불러오기</h3><ul>
+<li><p>스크래피 쉘을 이용하여 네이버 페이지 연결하기</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy shell &quot;http://naver.com&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>네이버 실시간 검색 1위 xpath 객체 가져오기</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">response.xpath(&apos;//*[@id=&quot;PM_ID_ct&quot;]/div[1]/div[2]/div[2]/div[1]/div/ul/li[1]/a/span&apos;)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>네이버 실시간 검색 20개 xpath 객체 가져오기<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">response.xpath(&apos;//*[@id=&quot;PM_ID_ct&quot;]/div[1]/div[2]/div[2]/div[1]/div/ul/li/a/span&apos;)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
         </div>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- 광고 -->
@@ -229,7 +265,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="https://hhj235.github.io/2018/06/23/crawling-with-xpath-selector/" data-id="cjiqp4pwq0001bs7kb9urkdna" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://hhj235.github.io/2018/06/23/crawling-with-xpath-selector/" data-id="cjiqx9sun00012o7k5xb60och" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -403,8 +439,8 @@ ga('send', 'pageview');
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/Crawling/">Crawling</a></p>
-                            <p class="item-title"><a href="/2018/06/23/crawling-with-xpath-selector/" class="title">crawling with xpath selector</a></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/Crawling/">Crawling</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Crawling/Scrapy/">Scrapy</a></p>
+                            <p class="item-title"><a href="/2018/06/23/crawling-with-xpath-selector/" class="title">Web Crawling with scrapy(1)</a></p>
                             <p class="item-date"><time datetime="2018-06-23T00:54:54.000Z" itemprop="datePublished">2018-06-23</time></p>
                         </div>
                     </li>
@@ -478,7 +514,7 @@ ga('send', 'pageview');
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">카테고리</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algorithm/">Algorithm</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Crawling/">Crawling</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web/">Web</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Web/Hexo/">Hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web/Mark-Down/">Mark Down</a><span class="category-list-count">1</span></li></ul></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algorithm/">Algorithm</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Crawling/">Crawling</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Crawling/Scrapy/">Scrapy</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web/">Web</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Web/Hexo/">Hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web/Mark-Down/">Mark Down</a><span class="category-list-count">1</span></li></ul></li></ul>
         </div>
     </div>
 
@@ -498,7 +534,7 @@ ga('send', 'pageview');
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">태그</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mark-Down/">Mark Down</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Que/">Que</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Stack/">Stack</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Stack-Que/">Stack&Que</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Today-I-learned/">Today I learned</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/crawling/">crawling</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/xpath/">xpath</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Crawling/">Crawling</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mark-Down/">Mark Down</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Que/">Que</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Scrapy/">Scrapy</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Stack/">Stack</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Stack-Que/">Stack&Que</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Today-I-learned/">Today I learned</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/xpath/">xpath</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -508,7 +544,7 @@ ga('send', 'pageview');
     <div class="widget-wrap widget-float">
         <h3 class="widget-title">태그 클라우드</h3>
         <div class="widget tagcloud">
-            <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Mark-Down/" style="font-size: 10px;">Mark Down</a> <a href="/tags/Que/" style="font-size: 10px;">Que</a> <a href="/tags/Stack/" style="font-size: 10px;">Stack</a> <a href="/tags/Stack-Que/" style="font-size: 10px;">Stack&Que</a> <a href="/tags/Today-I-learned/" style="font-size: 20px;">Today I learned</a> <a href="/tags/crawling/" style="font-size: 10px;">crawling</a> <a href="/tags/xpath/" style="font-size: 10px;">xpath</a>
+            <a href="/tags/Crawling/" style="font-size: 10px;">Crawling</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Mark-Down/" style="font-size: 10px;">Mark Down</a> <a href="/tags/Que/" style="font-size: 10px;">Que</a> <a href="/tags/Scrapy/" style="font-size: 10px;">Scrapy</a> <a href="/tags/Stack/" style="font-size: 10px;">Stack</a> <a href="/tags/Stack-Que/" style="font-size: 10px;">Stack&Que</a> <a href="/tags/Today-I-learned/" style="font-size: 20px;">Today I learned</a> <a href="/tags/xpath/" style="font-size: 10px;">xpath</a>
         </div>
     </div>
 
